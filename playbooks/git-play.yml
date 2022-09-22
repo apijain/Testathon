@@ -1,0 +1,21 @@
+- name: Hello World Sample
+  hosts: all 
+  tasks:
+    - name: Hello Message
+      debug:
+        msg: "Hello World"
+    - name: ansible version
+      command: "ansible --version"
+      register: ansible_version
+      
+    - name: print ansible version
+      debug:
+        msg: "{{ ansible_version }}"
+    
+    - name: ansible config
+      command: "ansible-config view"
+      register: ansible_config
+      
+    - name: print ansible version
+      debug:
+        msg: "{{ ansible_config }}"

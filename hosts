@@ -1,0 +1,9 @@
+[all]
+installer-0 ansible_user=cloud-user ansible_host=10.0.202.134 ansible_python_interpreter="/usr/libexec/platform-python" provisioned_name=content-signing-testathon-scn1-installer-0 ansible_ssh_private_key_file=./key.pem 
+
+automationcontroller-0 ansible_user=cloud-user ansible_host=10.0.202.124 ansible_python_interpreter="/usr/libexec/platform-python" provisioned_name=content-signing-testathon-scn1-automationcontroller-0 ansible_ssh_private_key_file=./key.pem
+
+automationhub-0 ansible_user=cloud-user ansible_host=10.0.202.159 ansible_python_interpreter="/usr/libexec/platform-python" provisioned_name=content-signing-testathon-scn1-automationhub-0 ansible_ssh_private_key_file=./key.pem 
+
+[all:vars]
+ansible_host_key_checking=false
